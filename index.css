@@ -1,0 +1,237 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./res/PlayfairDisplay-Regular.ttf);
+  }
+  
+  * {
+    font-family: myFirstFont;
+    color: #464646;
+    box-sizing: border-box;
+  }
+
+  :root {
+
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1rem;
+    --fs-body: 0.5rem;
+
+  }
+
+  @media (min-width: 800px) {
+    :root{  
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 2rem;
+        --fs-body: 1.25rem;
+
+    }
+  }
+
+  html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-size: var(--fs-body);
+  }
+
+  @keyframes fadein {
+      from {
+          opacity: 0;
+          transition: ease-out;
+      }
+      to {
+          opacity: 1;
+          transition: ease-in;
+      }
+  }
+
+  img {
+      display: block;
+      max-width: 100%;
+  }
+
+  header {
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+     padding: 2rem;
+     padding-bottom: 0rem;
+  }
+
+  a {
+      color: #464646;
+  }
+
+  li {
+      padding-left: 3rem;
+      padding-top: 1rem;
+      font-size: 1.5rem;
+      list-style: none;
+  }
+
+  .mount {
+      margin-left: 3rem;
+      font-size: 4rem;
+  }
+
+  .links {
+      
+      padding-top: 1rem;
+      padding-right: 3rem;
+  }
+
+  .fuji {
+    position: relative;
+    max-width: 70vw;
+    margin-left: 3rem;
+    animation: fadein 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .fuji-img {
+      max-width: 70vw;
+      height: auto;
+        }
+
+  .fuji-head {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-size: 5.5rem;
+  }
+
+  .fuji-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      font-size: 1.5rem;
+      max-width: 50rem;
+  }
+
+  @media  ( max-width: 1280px ) {
+    .fuji-text {
+      color: #464646;
+      position: relative;
+      padding-top: 2rem ;
+    }
+  }
+
+  .japan-text {
+          transform: rotate(270deg);
+          font-size: 13rem;
+  }
+
+  .japan-container {
+    animation: fadein 1s;
+       padding-top: 14.5rem;
+        max-width: 25vw;
+  }
+
+  .second {
+      margin-top: 6rem;
+      margin-left: 3rem;
+      animation: fadein 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .tokyo {
+      max-width: 70vw;
+      
+  }
+
+  .tokyo-container {
+    max-width: 20vw;
+    padding-top: 17rem;
+  }
+
+  .tokyo-head {
+    transform: rotate(270deg);
+    font-size: 8rem;
+  }
+
+  .tokyo-text {
+      max-width: 70vw;
+      font-size: 1.5rem;
+  }
+
+  .block {
+      width: 17.5rem;
+      height: 17.5rempx;
+      background-color: #464646;
+  }
+
+  .third {
+      margin-top: 8rem;
+  }
+
+  .tianshu {
+      max-width: 70vw;
+      position: relative;
+  }
+
+  .tianshu-text {
+      width: 25vw;
+      padding: 3rem;
+      text-align: center;
+  }
+
+  .arrow {
+      margin: auto;
+      display: block;
+  }
+
+  footer {
+      background-color: #464646;
+      margin-top: 5rem;
+      height: 15rem;
+      width: 100vw;
+      
+  }
+
+  .social {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 50vw;
+    margin:auto;
+  }
+
+  .box {
+    display: flex;
+    position: relative;
+  }
+
+  .mail {
+      display: flex;
+      position: relative;
+      margin: auto;
+      justify-content: space-around;
+  }
+
+
+
+.tianshu-text-alt {
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    left: 3rem;
+    font-size: 2rem;
+}
+
+@media ( max-width: 1040px ) {
+  .tianshu-text-alt {
+    position: relative;
+    color: #464646;
+    padding-top: 2rem;
+  }
+}
+
+  
